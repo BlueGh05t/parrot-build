@@ -1,0 +1,9 @@
+---
+- name: "Customizing Parrot"
+  host: localhost
+  connection: local
+  tasks:
+    - name: "Demo Debug"
+      debug:
+        msg: "Please Subscribe"
+        
