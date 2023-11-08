@@ -2,4 +2,5 @@
 - include: kerbrute.yml
 - include: pwntools.yml
 - include: ropper.yml
+- include: sublime.yml
 ...
