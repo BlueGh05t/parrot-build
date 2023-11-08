@@ -1,0 +1,15 @@
+---
+- name: "Install pwntools requirements"
+  package:
+    name: 
+      - python3-dev
+      - libssl-dev
+      - libffi-dev
+      - build-essential
+    state: present
+  become: true
+  become_method: sudo
+- name: "Install pwntools"
+  ansible.builtin.pip:
+    name: pwntools
+    executable: pip

@@ -1,0 +1,17 @@
+---
+- name: "Install ropper requirements - capstone"
+  ansible.builtin.pip:
+    name: capstone
+    executable: pip
+  become: true
+  become_method: sudo
+- name: "Install ropper requirements - filebytes"
+  ansible.builtin.pip:
+    name: filebytes
+    executable: pip
+  become: true
+  become_method: sudo
+- name: "Install ropper"
+  ansible.builtin.pip:
+    name: ropper
+    executable: pip
