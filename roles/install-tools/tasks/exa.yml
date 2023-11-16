@@ -1,0 +1,8 @@
+---
+- name: Install exa
+  apt:
+    name: exa
+    state: present
+    update_cache: true
+  become: true
+  become_method: sudo
